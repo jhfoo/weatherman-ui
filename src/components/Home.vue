@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-xl>
     <v-layout text-xs-center wrap>
-      <v-flex v-for="reading in readings" :key="reading.DeviceId" xs6 md6>
+      <v-flex v-for="reading in readings" :key="reading.DeviceId" xs12 sm6>
         <v-card >
           <v-card-title primary-title>
             <h3 class="headline mb-0">Readings {{displayUnixDateTime(reading.DateTime)}}</h3>
